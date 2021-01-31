@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+        <meta charset = "utf-8">
+    <meta http-equiv="refresh" content="59" />
+    <title> DataCare Patient#123 </title>
+
+    <script src = 'js.js'>
+    </script>
+    </head>
+    <body>
+        <h1 hidden> Cathether's Current Level:1000 </h1>
+        <h1 hidden>In-Bed Status : Currently in Bed</h1>
+        <a href=""><img src="logo.jpg" class = "centerImg"></img></a>
+
+        <ul class="list">
+            <li class = "emergency" onclick="needAttention();" value=0 id = "needattention">Emergency</li>
+            <li class = "livestream" onclick="livestream_video();"> <iframe width="560" height="315" src="https://www.youtube.com/embed/n1IwB9X-v7w" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></li>
+            <li class = "family" value = 0 id = "familycall" onclick="contactFamily();">Family</li>
+            <li class = "tasks"><iframe width = "430" height = "315" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSog1svzWVpD7ex5UzWArMxvD5KEssGXBBwY6yWxztzA-w9xmcAPnVY3pGZkQS1k21xP4DXFzv_3Pid/pubhtml?widget=true&amp;headers=false"></iframe></li>
+        </ul>
+
+        <script>
+            var d = new Date();
+            var m = d.getMinutes();
+            var h = d.getHours();
+            console.log(m)
+            console.log(h)
+            if (h == 23 && m == 45){
+                  var sound = new Audio('SlowMorning.mp3');
+                  sound.play();
+            }
+        </script>
+
+    </body>
+
+    
+</html>
+
+
+
