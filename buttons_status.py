@@ -3,7 +3,7 @@ import smtplib
 from email.message import EmailMessage
 
 EMAIL_ADDRESS = 'memyselfandi7001@gmail.com'
-EMAIL_PASSWORD = 'hackathon'
+EMAIL_PASSWORD = '*********'
 
 msg = EmailMessage()
 msg['Subject'] = '****Important**** Mr. Pennimpede wishes to contact you.'
