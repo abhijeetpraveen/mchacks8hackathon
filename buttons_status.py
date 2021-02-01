@@ -8,7 +8,7 @@ EMAIL_PASSWORD = '*********'
 msg = EmailMessage()
 msg['Subject'] = '****Important**** Mr. Pennimpede wishes to contact you.'
 msg['From'] = EMAIL_ADDRESS
-msg['To'] = 'abhijeetpraveen@gmail.com'
+msg['To'] = '**************'
 msg.set_content('''Hello,
                 Mr. Pennimpede has asked for you to contact him. Please give him a call as soon as possible.
 
